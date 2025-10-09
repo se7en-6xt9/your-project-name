@@ -1,0 +1,14 @@
+       #include<stdio.h>
+        int main() {
+        int number;
+        int count=0;
+        printf("   >> [ ENTER NUMBER ] <<   -->>  ");
+        scanf("  %d", &number);
+        int sameNum = number;
+        while(number>0){
+         number = number/10;
+         count++;
+        }
+        printf("    Digits in Number  [ %d ]  are [ %d ]\n", sameNum,count);
+        }
+
