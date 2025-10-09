@@ -1,0 +1,18 @@
+       #include<stdio.h>
+        int main() {
+        int number;
+        int remainder;
+        printf("  >> Enter number <<    -->> ");
+        scanf(" %d", &number);
+        int dupNum = number;
+        while(number>0){
+        int remainder = number%10;
+        if(remainder%2==0){
+        printf("   Number [ %d ] is even [ %d ] \n", dupNum, remainder);
+        } else {
+        printf("   Number [ %d ] is odd  [ %d ] \n", dupNum, remainder);
+        }
+        number = number/10;
+                }
+        return 0;
+        }
